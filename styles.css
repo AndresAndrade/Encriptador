@@ -1,16 +1,25 @@
-body{
-    width: 940px;
+*{
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body{
+    width: 60vw;
+    height: 100%;
     margin: 0 auto;
     background: #E5E5E5;
 }
 
 header{
-    width: 100%;
     height: 10vh;
+    background-color: crimson;
 }
 
 main {
     display: flex;
+    padding: 0;
+    margin: 0 auto;
+    background-color: green;
 }
 
 .logo {
@@ -23,86 +32,25 @@ main {
     top: 40px;
 }
 
-.container{
-    padding: 0;
-    width: 940px;
-    height: 85vh;
-    margin: 0 auto;
-}
-
-.izquierda{
-    display: inline-block;
-    position: static;
-    height: 70vh;
-    width: 80%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.izquierda textarea{
-    margin-top: 7%;
-    width: 70%;
-    height: 70%;
-    border: none;
-    background: #E5E5E5;
-}
-
-.derecha {
-    display: inline-block;
-    position: absolute;
-    width: 20%;
-    height: 85%;
-    text-align: center;
-    box-sizing: border-box;
-    background: #FFFFFF;
-
-    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
-
-.derecha input{
-    display: none;
-}
-
-.dibujo {
+.seccion-izquierda{
     position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 50%;
-}
-
-#btn-copiar {
-    display: none;
-    margin: 0 10px;
-    padding: 24px;
-
-    border-radius: 24px;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-}
-
-#btn-copiar label {
-    width: 100%;
-    height: 100%;
-
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     text-align: center;
+}
 
-    color: #0A3871;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+.seccion-izquierda textarea{
+    border: none;
+    background: chocolate;
+    position: relative;
+    margin: 100px 10px;
+    width:  35vw;
+    height: 30vh;
+    resize: none;
 }
 
 .botones{
     text-align: center;
-    height: 15vh;
-    width: 80%;
+    width: 35vw;
+
 }
 
 .botones p{
@@ -113,16 +61,20 @@ main {
 
 
 #btn-encriptar {
-    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 24px;
+    gap: 8px;
+
+    width: 10vw;
+    height: 67px;
 
     border-radius: 24px;
     background: #0A3871;
 }
 
 #btn-encriptar label {
-    width: 100%;
-    height: 100%;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -132,11 +84,21 @@ main {
     text-align: center;
 
     color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
 
 #btn-desencriptar {
-    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 24px;
+    gap: 8px;
+
+    width: 10vw;
+    height: 67px;
 
     border-radius: 24px;
     background: #D8DFE8;
@@ -144,9 +106,6 @@ main {
 }
 
 #btn-desencriptar label {
-    width: 100%;
-    height: 100%;
-
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -165,6 +124,71 @@ button:hover {
     transform: scale(1.1);
 }
 
+.seccion-derecha {
+    position: relative;
+    text-align: center;
+
+    background: #FFFFFF;
+}
+
+.seccion-derecha div {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    margin: 10px 10px;
+    height: 80vh;
+    width: calc(25vw - 40px);
+
+    display: inline-grid;
+    align-items: center;
+
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    background: url("ImgPC/Muñeco.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+}
+
+.seccion-derecha textarea{
+    display: none;
+    border: none;
+    background: burlywood;
+    position: relative;
+    margin: 100px 10px;
+    width: calc(25vw - 60px);
+    height: 30vh;
+    resize: none;
+}
+
+#btn-copiar {
+    display: none;
+    margin: 0 10px;
+    padding: 24px;
+    width: calc(25vw - 60px);
+
+    border-radius: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+#btn-copiar label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
 footer{
-    height: 5vh;
+    position: relative;
+
 }

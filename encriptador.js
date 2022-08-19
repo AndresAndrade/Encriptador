@@ -22,7 +22,7 @@ function encriptar() {
     txtEncriptado = txtEncriptado.replace(/o/igm, "ober");
     txtEncriptado = txtEncriptado.replace(/u/igm, "ufat");
 
-    document.getElementById("dibujo").style.display = "none";
+    document.querySelector(".seccion-derecha div").style.background = "none";
     document.getElementById("alerta").style.display = "none";
     document.getElementById("mensaje").style.display = "show";
     document.getElementById("mensaje").style.display = "inherit";
@@ -43,7 +43,7 @@ function desencriptar() {
     txtDesencriptado = txtDesencriptado.replace(/ober/igm, "o");
     txtDesencriptado = txtDesencriptado.replace(/ufat/igm, "u");
 
-    document.getElementById("dibujo").style.display = "none";
+    document.querySelector(".seccion-derecha div").style.background = "none";
     document.getElementById("alerta").style.display = "none";
     document.getElementById("mensaje").style.display = "show";
     document.getElementById("mensaje").style.display = "inherit";
