@@ -1,0 +1,170 @@
+body{
+    width: 940px;
+    margin: 0 auto;
+    background: #E5E5E5;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+}
+
+.logo {
+    display: block;
+    padding: 0;
+    position: relative;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.container{
+    padding: 0;
+    width: 940px;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+.izquierda{
+    display: inline-block;
+    position: static;
+    height: 70vh;
+    width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.izquierda textarea{
+    margin-top: 7%;
+    width: 70%;
+    height: 70%;
+    border: none;
+    background: #E5E5E5;
+}
+
+.derecha {
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    height: 85%;
+    text-align: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.derecha input{
+    display: none;
+}
+
+.dibujo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50%;
+}
+
+#btn-copiar {
+    display: none;
+    margin: 0 10px;
+    padding: 24px;
+
+    border-radius: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+#btn-copiar label {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.botones{
+    text-align: center;
+    height: 15vh;
+    width: 80%;
+}
+
+.botones p{
+    box-sizing: border-box;
+    margin-bottom: 1.5%;
+    text-align: left;
+}
+
+
+#btn-encriptar {
+    margin: 0 10px;
+    padding: 24px;
+
+    border-radius: 24px;
+    background: #0A3871;
+}
+
+#btn-encriptar label {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#btn-desencriptar {
+    margin: 0 10px;
+    padding: 24px;
+
+    border-radius: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+#btn-desencriptar label {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    height: 5vh;
+}
