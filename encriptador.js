@@ -24,6 +24,7 @@ function encriptar() {
 
     document.querySelector(".seccion-derecha div").style.background = "none";
     document.getElementById("alerta").style.display = "none";
+    document.getElementById("aviso").style.display = "none";
     document.getElementById("mensaje").style.display = "show";
     document.getElementById("mensaje").style.display = "inherit";
     document.getElementById("entrada").value = "";
@@ -45,6 +46,7 @@ function desencriptar() {
 
     document.querySelector(".seccion-derecha div").style.background = "none";
     document.getElementById("alerta").style.display = "none";
+    document.getElementById("aviso").style.display = "none";
     document.getElementById("mensaje").style.display = "show";
     document.getElementById("mensaje").style.display = "inherit";
     document.getElementById("entrada").value = "";

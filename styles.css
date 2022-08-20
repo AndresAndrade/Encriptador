@@ -3,6 +3,13 @@
     -webkit-box-sizing: border-box;
 }
 
+html{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
 html, body{
     width: 60vw;
     height: 100%;
@@ -11,71 +18,80 @@ html, body{
 }
 
 header{
-    height: 10vh;
-    background-color: crimson;
+    height: 20%;
+    display: flex;
+}
+
+.logo {
+    padding: 0;
+    position: relative;
+    margin: 10vh 10px;
 }
 
 main {
     display: flex;
     padding: 0;
     margin: 0 auto;
-    background-color: green;
-}
-
-.logo {
-    display: block;
-    padding: 0;
-    position: relative;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    height: 70%;
 }
 
 .seccion-izquierda{
     position: relative;
-    text-align: center;
+    align-items: center;
 }
 
 .seccion-izquierda textarea{
     border: none;
-    background: chocolate;
     position: relative;
-    margin: 100px 10px;
+    margin: 10vh 10px;
     width:  35vw;
     height: 30vh;
     resize: none;
+
+    overflow: hidden;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.seccion-izquierda p{
+    width: 35vw;
+    height: 3vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-items: start;
+    text-align: left;
+
+    overflow: hidden;
 }
 
 .botones{
-    text-align: center;
+    display: flex;
     width: 35vw;
-
+    height: 10vh;
+    margin: 0 auto;
+    align-items: center;
 }
-
-.botones p{
-    box-sizing: border-box;
-    margin-bottom: 1.5%;
-    text-align: left;
-}
-
 
 #btn-encriptar {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px;
     gap: 8px;
+    margin: 0 auto;
 
-    width: 10vw;
-    height: 67px;
+    overflow: hidden;
+
+    width: calc(17.5vw - 25px);
 
     border-radius: 24px;
     background: #0A3871;
 }
 
 #btn-encriptar label {
-
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -93,12 +109,14 @@ main {
 #btn-desencriptar {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px;
     gap: 8px;
+    margin: 0 auto;
 
-    width: 10vw;
-    height: 67px;
+    overflow: hidden;
+
+    width: calc(17.5vw - 25px);
 
     border-radius: 24px;
     background: #D8DFE8;
@@ -121,28 +139,30 @@ main {
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.0);
 }
 
 .seccion-derecha {
     position: relative;
     text-align: center;
-
     background: #FFFFFF;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }
 
 .seccion-derecha div {
     box-sizing: border-box;
     background: #FFFFFF;
-    margin: 10px 10px;
-    height: 80vh;
+    margin: 15px 10px;
+    height: 65vh;
     width: calc(25vw - 40px);
 
-    display: inline-grid;
+    display: flow-root;
     align-items: center;
-
-    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
 
     background: url("ImgPC/Muñeco.svg");
     background-repeat: no-repeat;
@@ -154,19 +174,46 @@ button:hover {
 .seccion-derecha textarea{
     display: none;
     border: none;
-    background: burlywood;
     position: relative;
-    margin: 100px 10px;
+    margin: 5vh 10px;
     width: calc(25vw - 60px);
     height: 30vh;
     resize: none;
+
+    overflow: hidden;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.seccion-derecha h1 {
+    margin: 50vh 10px 0;
+    width: calc(25vw - 60px);
+    height: 10vh;
+    font-weight: bold;
+    font-size: calc(1rem + 1vw);
+
+    overflow: hidden;
+}
+
+.seccion-derecha p {
+    margin: 0 10px;
+    width: calc(25vw - 60px);
+    height: 5vh;
+    font-weight: lighter;
+
+    overflow: hidden;
 }
 
 #btn-copiar {
     display: none;
-    margin: 0 10px;
+    margin: 20vh 10px 0;
     padding: 24px;
     width: calc(25vw - 60px);
+
+    overflow: hidden;
 
     border-radius: 24px;
     background: #D8DFE8;
@@ -189,6 +236,7 @@ button:hover {
 }
 
 footer{
+    height: 10%;
     position: relative;
 
 }
