@@ -67,6 +67,10 @@ main {
     overflow: hidden;
 }
 
+.seccion-izquierda p:before{
+    content: url("ImgPC/signo.png");
+}
+
 .botones{
     display: flex;
     width: 35vw;
@@ -238,5 +242,90 @@ button:active {
 footer{
     height: 10%;
     position: relative;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+@media screen and (max-width: 900px){
+    html, body{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main{
+        display: block;
+        text-align: center;
+    }
+
+    .seccion-izquierda textarea{
+        border: none;
+        position: relative;
+        margin: 20px auto;
+        width:  90%;
+        height: 20rem;
+    }
+
+    .seccion-izquierda p{
+        width: 90%;
+        height: 3rem;
+        margin: 0 auto;
+    }
+
+    .botones{
+        width: 90%;
+        height: 5rem;
+    }
+
+    #btn-encriptar {
+        width: 40%;
+
+    }
+
+    #btn-desencriptar {
+        width: 40%;
+    }
+
+    .seccion-derecha{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .seccion-derecha div {
+        margin: 15px auto;
+        height: auto;
+        width: 90%;
+        background: #FFFFFF;
+        border-radius: 32px;
+    }
+
+    .seccion-derecha textarea{
+        margin: 1rem auto;
+        width: 90%;
+        height: 17rem;
+    }
+
+    .seccion-derecha h1 {
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .seccion-derecha p {
+        margin: auto auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #btn-copiar {
+        margin:  1rem auto;
+        padding: 24px;
+        width: 40%;
+
+    }
+
+    footer{
+        padding: 5rem;
+    }
 
 }

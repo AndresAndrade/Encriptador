@@ -8,40 +8,17 @@ console.log(result);*/
 let userCheck = /^[A-Za-z]+\w\w$|^[A-Za-z][A-Za-z]$/g; // Cambia esta línea
 let result = userCheck.test(username);
 console.log(result);*/
-
-let users = {
-    Alan: {
-        age: 27,
-        online: true
-    },
-    Jeff: {
-        age: 32,
-        online: true
-    },
-    Sarah: {
-        age: 48,
-        online: true
-    },
-    Ryan: {
-        age: 19,
-        online: true
+function titleCase(str) {
+    let arr = str.split(/\s/);
+    let palabra = "";
+    let oracion = [];
+    for(let i = 0; i < arr.length; i++) {
+        palabra = arr[i][0].toUpperCase() + arr[i].slice(1);
+        oracion.push(palabra);
+        palabra = "";
     }
-};
-
-function isEveryoneHere(userObj) {
-    // Cambia solo el código debajo de esta línea
-    prop = ["Alan", "Jeff", "Sarah", "Ryan"];
-    result = true;
-
-    for(let u in prop) {
-        result = userObj.hasOwnProperty(u);
-        if(result == false) {
-            break;
-        }
-    }
-    return result;
-    // Cambia solo el código encima de esta línea
+    return oracion.join(" ");
 }
 
-console.log(isEveryoneHere(users));
+console.log(titleCase("I'm a little tea pot"));
 
